@@ -1,0 +1,27 @@
+/*!
+Theme Name: WordPress Boilerplate
+Theme URI: url do tema
+Author: Breno Lemos
+Author URI: http://brenolemos.com/
+Description: Criado para empresa do tema.
+Version: 1.0
+*/
+
+
+// Vendor
+@import "vendor/bootstrap";
+@import "vendor/owl-carousel";
+@import "vendor/owl-theme";
+
+// Global
+@import "global/padroes";
+@import "global/animation";
+
+// Fontes
+@import "fonts/fontawesome/fontawesome-all";
+@import "fonts/fonts";
+
+// Pages
+@import "pages/index";
+@import "pages/header";
+@import "pages/footer";

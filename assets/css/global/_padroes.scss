@@ -1,0 +1,101 @@
+// Global
+body {
+	background: #fff;
+	color: #000;
+}
+
+a {
+	color: blue;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.hidden {
+	display: none !important;
+	visibility: hidden !important;
+}
+
+*, ::after, ::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+// Colors
+$laranja: #FF8109;
+$vermelho: #b72329;
+$branco: #fff;
+$cinza-claro: #a9a9a9;
+$cinza-medio: #595656;
+$cinza-escuro: #949494;
+
+
+// Classes de Cores
+.laranja {color: $laranja !important;}
+.cinza-claro {color: $cinza-claro;}
+.cinza-medio {color: $cinza-medio;}
+.cinza-escuro {color: $cinza-escuro;}
+.branco {color: $branco;}
+.vermelho {color: $vermelho;}
+
+// Classes de Fontes
+.gotham-extralight {font-family: 'Gotham ExtraLight';}
+.gotham-medium {font-family: 'Gotham Medium';}
+.gotham-bold {font-family: 'Gotham Bold';}
+
+// Classes de Tamanho de Fontes
+.fs-12 {font-size: 12px;}
+.fs-14 {font-size: 14px;}
+.fs-16 {font-size: 16px;}
+.fs-18 {font-size: 18px;}
+.fs-24 {font-size: 24px;}
+.fs-36 {font-size: 36px;}
+.fs-45 {font-size: 45px;}
+.fs-60 {font-size: 60px;}
+
+
+// Espaçamentos
+.mt-15 {margin-top: 15px;}
+.mb-15 {margin-bottom: 15px;}
+.mr-15 {margin-right: 15px;}
+.ml-15 {margin-left: 15px;}
+
+.mt-30 {margin-top: 30px;}
+.mb-30 {margin-bottom: 30px;}
+.ml-30 {margin-left: 30px;}
+.mr-30 {margin-right: 30px;}
+
+.mt-45 {margin-top: 45px;}
+.mb-45 {margin-bottom: 45px;}
+
+.mt-60 {margin-top: 60px;}
+.mb-60 {margin-bottom: 60px;}
+
+.p-15 {padding: 15px;}
+.pt-15 {padding-top: 15px;}
+.pb-15 {padding-bottom: 15px;}
+.pl-15 {padding-left: 15px;}
+.pr-15 {padding-right: 15px;}
+
+.pt-30 {padding-top: 30px;}
+.pb-30 {padding-bottom: 30px;}
+.pl-30 {padding-left: 30px;}
+.pr-30 {padding-right: 30px;}
+
+.pt-45 {padding-top: 45px;}
+.pb-45 {padding-bottom: 45px;}
+.pl-45 {padding-left: 45px;}
+
+.pt-60 {padding-top: 60px !important;}
+.pb-60 {padding-bottom: 60px !important;}
+.pr-60 {padding-right: 60px !important;}
+
+.mw-170 {
+	max-width: 170px;;
+}
+.lh-12 {
+	line-height: 1.2em;
+}

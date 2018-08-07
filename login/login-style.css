@@ -1,0 +1,47 @@
+body.login {
+    background: #016076;
+
+}
+.login h1 a {
+    background: url('login-logo.svg') no-repeat center center;
+    background-size: cover; 
+    width: 200px;
+    height: 122px;
+}
+.login input[type="text"]{
+    background-color: #ffffff;
+    border-color:#dddddd;
+    -webkit-border-radius: 4px;
+    font-size: 14px;
+    padding: 10px;
+}
+  
+.login input[type="password"]{
+    background-color: #ffffff;
+    border-color:#dddddd;
+    -webkit-border-radius: 4px;
+    font-size: 14px;
+    padding: 10px;
+}
+.login .button-primary {
+    background-color:#016076 !important;
+    color: #ffffff;
+    background: #0085ba;
+    outline: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #1f1f1f, 1px 0 1px #1f1f1f, 0 1px 1px #1f1f1f, -1px 0 1px #1f1f1f;
+    border: 1px solid #016076;
+    transition: all .3s ease;
+  }
+
+  .login .button-primary:hover {
+      margin-top: -5px;
+      margin-bottom: 5px;
+      border-color: transparent;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  }
+  .login #nav a, .login #backtoblog a {
+      color: #fff !important;
+  }
+ 
