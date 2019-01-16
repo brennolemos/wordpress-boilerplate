@@ -6,13 +6,11 @@ var gulp = require('gulp'),
 		autoprefixer = require('gulp-autoprefixer'),
 		browserSync = require('browser-sync'),
 		watch = require('gulp-watch'),
-		gutil = require('gulp-util'),
-		plumber = require('gulp-plumber');
+		gutil = require('gulp-util');
 
 // Sass Function
 gulp.task('sass', function(){
 	gulp.src('assets/css/**/*.scss')
-		.pipe(plumber())
 		.pipe(sass())
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions'],
@@ -26,7 +24,6 @@ gulp.task('sass', function(){
 // Plugins Concat
 gulp.task('plugins-script', function() {
 	gulp.src('assets/js/vendor/*.js')
-		.pipe(plumber())
 		.pipe(concat('plugins.min.js'))
 		// .pipe(uglify())
 		.pipe(gulp.dest('assets/js/'))
@@ -38,7 +35,6 @@ gulp.task('main-script', function() {
 	gulp.src([
 			'assets/js/main.js',
 		])
-		.pipe(plumber())
 		.pipe(concat('main.min.js'))
 		// .pipe(uglify())
 		.pipe(gulp.dest('assets/js/'))
