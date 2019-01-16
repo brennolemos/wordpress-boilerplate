@@ -5,7 +5,6 @@ var gulp = require('gulp'),
 		uglify = require('gulp-uglify'),
 		autoprefixer = require('gulp-autoprefixer'),
 		browserSync = require('browser-sync'),
-		rsync = require('gulp-rsync'),
 		watch = require('gulp-watch'),
 		gutil = require('gulp-util'),
 		plumber = require('gulp-plumber');
@@ -68,27 +67,3 @@ gulp.task('default', ['browserSync', 'sass'], function(){
   gulp.watch('js/**/*.js', browserSync.reload);
 });
 
-// Deploy
-gulp.task('deploy', function() {
-	gulp.src('./')
-	.pipe(rsync({
-		exclude: [
-			'.git*',
-			'node_modules',
-			'.sass-cache',
-			'gulpfile.js',
-			'package.json',
-			'.DS_Store',
-			'README.md',
-			'.jshintrc',
-			'*.sublime-workspace',
-			'*.sublime-project'
-		],
-		root: './',
-		hostname: 'user@host',
-		destination: 'dest/',
-		recursive: true,
-		clean: true,
-		progress: true
-	}));
-});
